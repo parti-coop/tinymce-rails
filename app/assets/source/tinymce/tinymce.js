@@ -12171,7 +12171,8 @@
       });
     };
     var filterMobilePlugins = function (plugins) {
-      return filter(plugins, curry(contains, mobilePlugins));
+      return plugins;
+      // return filter(plugins, curry(contains, mobilePlugins));
     };
     var extractSections = function (keys, settings) {
       var result = bifilter(settings, function (value, key) {
